@@ -47,5 +47,7 @@ bin/stdlib/test_atoi: build/unity.o $(COMMON_DEPS)
 clean:
 	@echo "Cleaning directories"
 	@rm -rf build/* bin/*
+	@mkdir -p bin
+	@mkdir -p build
 	@mkdir -p bin/ctype
 	@mkdir -p bin/stdlib
